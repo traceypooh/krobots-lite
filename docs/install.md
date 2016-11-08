@@ -49,6 +49,7 @@ Kubernetes containers.
 OS X:
 
 ```
+K8S_VERSION="1.2.4"
 curl -O "http://storage.googleapis.com/kubernetes-release/release/${K8S_VERSION}/bin/darwin/amd64/kubectl"
 chmod 755 kubectl
 sudo mv kubectl /usr/local/bin
