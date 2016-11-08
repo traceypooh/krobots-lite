@@ -2,15 +2,18 @@
 
 K8S_VERSION="1.2.4"
 
+sudo mkdir -p -m777 /private/var/lib/kubelet;
+
 docker run \
   --volume=/:/rootfs:ro \
   --volume=/sys:/sys:ro \
   --volume=/var/lib/docker/:/var/lib/docker:rw \
-  --volume=/var/lib/kubelet/:/var/lib/kubelet:rw \
+  --volume=/private/var/lib/kubelet/:/var/lib/kubelet:rw \
   --volume=/var/run:/var/run:rw \
   --net=host \
   --pid=host \
   --privileged=true \
+  -p 8080:8080 \
   --name=kubelet \
   -d \
   gcr.io/google_containers/hyperkube-amd64:v${K8S_VERSION} \
