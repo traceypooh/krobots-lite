@@ -6,7 +6,7 @@ and the krobots-lite cli tool.
 
 ## Getting Setup
 
-You only need [Docker](www.docker.com) and this repository.
+You only need [Docker](https://docker.com) and this repository.
 Instructions will be based on OS X, but should work on linux with minor changes.
 
 ```
@@ -49,8 +49,7 @@ Kubernetes containers.
 OS X:
 
 ```
-K8S_VERSION="1.2.4"
-curl -O "http://storage.googleapis.com/kubernetes-release/release/${K8S_VERSION}/bin/darwin/amd64/kubectl"
+curl -O "http://storage.googleapis.com/kubernetes-release/release/v0.18.1/bin/darwin/amd64/kubectl"
 chmod 755 kubectl
 sudo mv kubectl /usr/local/bin
 ```
@@ -58,8 +57,7 @@ sudo mv kubectl /usr/local/bin
 Linux:
 
 ```
-K8S_VERSION="1.2.4"
-wget "http://storage.googleapis.com/kubernetes-release/release/${K8S_VERSION}/bin/linux/amd64/kubectl"
+wget "http://storage.googleapis.com/kubernetes-release/release/v0.18.1/bin/linux/amd64/kubectl"
 chmod 755 kubectl
 sudo mv kubectl /usr/local/bin
 ```
