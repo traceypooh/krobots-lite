@@ -6,7 +6,7 @@ and the krobots-lite cli tool.
 
 ## Getting Setup
 
-You only need [Docker](www.docker.com) and this repository.
+You only need [Docker](https://docker.com) and this repository.
 Instructions will be based on OS X, but should work on linux with minor changes.
 
 ```
